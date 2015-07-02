@@ -25,7 +25,7 @@ You may also add a *Key Changes since last release* block after *What is Nikola?
 
  * <input type="checkbox"> Write an announcement for GitHub Releases. It should use Markdown syntax and no word wrap.
  * <input type="checkbox"> Write an announcement for e-mail. It should use reST-esque syntax, with word wrap at 70 columns.
- * <input type="checkbox"> Write an announcement for the Nikola blog. Use `nikola new_post -t "Nikola v$VERSION is out!" -i path/to/blog.rst` to import the announcement template (which you should then edit). Make sure to set the tags to `nikola, planet, python, programming, release`, and to set the author name to your real name.
+ * <input type="checkbox"> Write an announcement for the Nikola blog. Use `nikola new_post -et "Nikola v$VERSION is out\!" -i path/to/blog.rst --tags 'nikola, planet, python, programming, release'` to import the announcement template (which you should then edit). Make sure to set the author name to your real name.
 
 ## Versioning and tagging
 
@@ -63,7 +63,7 @@ Run all the commands in your terminal:
  * <input type="checkbox"> Modify the version numbers in `stories/welcome.txt` and `stories/conf.txt`
  * <input type="checkbox"> Optionally regenerate the `cerulean` theme: `nikola bootswatch_theme -s cerulean -n cerulean`
  * <input type="checkbox"> Build and deploy the site
- * <input type="checkbox"> Commit your changes to GitHub
+ * <input type="checkbox"> Commit and push your changes to GitHub
 
 ## E-mails
 

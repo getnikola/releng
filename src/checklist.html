@@ -20,7 +20,7 @@
 <ul>
 <li><input type="checkbox"> Write an announcement for GitHub Releases. It should use Markdown syntax and no word wrap.</li>
 <li><input type="checkbox"> Write an announcement for e-mail. It should use reST-esque syntax, with word wrap at 70 columns.</li>
-<li><input type="checkbox"> Write an announcement for the Nikola blog. Use <code>nikola new_post -t &quot;Nikola v$VERSION is out!&quot; -i path/to/blog.rst</code> to import the announcement template (which you should then edit). Make sure to set the tags to <code>nikola, planet, python, programming, release</code>, and to set the author name to your real name.</li>
+<li><input type="checkbox"> Write an announcement for the Nikola blog. Use <code>nikola new_post -et &quot;Nikola v$VERSION is out\!&quot; -i path/to/blog.rst --tags 'nikola, planet, python, programming, release'</code> to import the announcement template (which you should then edit). Make sure to set the author name to your real name.</li>
 </ul>
 <h2>Versioning and tagging</h2>
 <p>Run all the commands in your terminal:</p>
@@ -57,7 +57,7 @@
 <li><input type="checkbox"> Modify the version numbers in <code>stories/welcome.txt</code> and <code>stories/conf.txt</code></li>
 <li><input type="checkbox"> Optionally regenerate the <code>cerulean</code> theme: <code>nikola bootswatch_theme -s cerulean -n cerulean</code></li>
 <li><input type="checkbox"> Build and deploy the site</li>
-<li><input type="checkbox"> Commit your changes to GitHub</li>
+<li><input type="checkbox"> Commit and push your changes to GitHub</li>
 </ul>
 <h2>E-mails</h2>
 <ul>
