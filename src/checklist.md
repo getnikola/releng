@@ -59,8 +59,8 @@ Run all the commands in your terminal:
 
 ## Website update
 
- * <input type="checkbox"> Copy all documentation and `CHANGES.txt` from your Nikola copy to `stories/`
- * <input type="checkbox"> Modify the version numbers in `stories/welcome.txt` and `stories/conf.txt`
+ * <input type="checkbox"> Copy all documentation, `AUTHORS.txt` and `CHANGES.txt` from your Nikola copy to `stories/`
+ * <input type="checkbox"> Modify the version numbers in `stories/conf.txt`
  * <input type="checkbox"> Optionally regenerate the `cerulean` theme: `nikola bootswatch_theme -s cerulean -n cerulean`
  * <input type="checkbox"> Build and deploy the site
  * <input type="checkbox"> Commit and push your changes to GitHub
