@@ -32,7 +32,8 @@ code { /* using kbd styles instead */
 <p>In order to create a release, you need a bit of free time and a GPG setup. You could technically do without them (<code>git tag -am</code> + <code>twine upload</code> without <code>-s</code>), but it’s nicer if we have some confirmation it’s really you.</p>
 <h2>Housekeeping</h2>
 <ul>
-<li><input type="checkbox"> Make sure you are on the <code>master</code> branch and run <code>git pull origin master</code></li>
+<li><input type="checkbox"> If you have a local clone of the releng repo: <code>git pull</code> first, refresh the page if necessary</li>
+<li><input type="checkbox"> Get into the Nikola repo, make sure you are on the <code>master</code> branch and run <code>git pull origin master</code></li>
 <li><input type="checkbox"> <code>scripts/jinjify.py</code></li>
 <li><input type="checkbox"> <code>scripts/import_po.py</code></li>
 <li><input type="checkbox"> <code>scripts/update-bower.sh</code></li>

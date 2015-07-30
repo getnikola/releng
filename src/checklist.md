@@ -6,7 +6,8 @@ In order to create a release, you need a bit of free time and a GPG setup. You c
 
 ## Housekeeping
 
- * <input type="checkbox"> Make sure you are on the `master` branch and run `git pull origin master`
+ * <input type="checkbox"> If you have a local clone of the releng repo: `git pull` first, refresh the page if necessary
+ * <input type="checkbox"> Get into the Nikola repo, make sure you are on the `master` branch and run `git pull origin master`
  * <input type="checkbox"> `scripts/jinjify.py`
  * <input type="checkbox"> `scripts/import_po.py`
  * <input type="checkbox"> `scripts/update-bower.sh`
