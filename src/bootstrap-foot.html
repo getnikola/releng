@@ -1,5 +1,31 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+    // Completed task counter
+    // by Chris Warrick -- JS code in public domain
+    var max = 0;
+    var inp;
+    $(document).ready(function() {
+        inp = $('input');
+        max = inp.length;
+        $('#total').text(max);
+    });
+    $('input').click(function() {
+        inp = $('input');
+        var count = 0;
+        for (var i = 0; i < inp.length; i++) {
+            if (inp[i].checked) {
+                count += 1;
+            }
+        }
+        $('#current').text(count);
+        if (count == max) {
+            $('#counter').addClass('complete');
+        } else {
+            $('#counter').removeClass('complete');
+        }
+    });
+    </script>
   </body>
 </html>

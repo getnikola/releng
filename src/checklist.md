@@ -1,4 +1,4 @@
-# Nikola Release Checklist (v8/2015-09-04)
+# Nikola Release Checklist (v9/2015-10-08)
 
 ## Requirements
 
