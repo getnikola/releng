@@ -1,4 +1,4 @@
-# Nikola Release Checklist (v9/2015-10-08)
+# Nikola Release Checklist (v10/2016-02-11)
 
 ## Requirements
 
@@ -14,6 +14,7 @@ In order to create a release, you need a bit of free time and a GPG setup. You c
  * <input type="checkbox"> `scripts/update-bower.sh`
  * <input type="checkbox"> `scripts/generate_symlinked_list.sh`
  * <input type="checkbox"> `scripts/generate_conf.py > ../nikola-site/listings/conf.py` (if necessary, change the path to reflect where you store your clone of the Nikola website)
+ * <input type="checkbox"> Check if there are any new languages that **have translations** (edit the files for translations marked as not found manually) and add them, using `scripts/langstatus.py`
 
 ## Preparation
 

@@ -1,4 +1,4 @@
-<h1>Nikola Release Checklist (v9/2015-10-08)</h1>
+<h1>Nikola Release Checklist (v10/2016-02-11)</h1>
 <h2>Requirements</h2>
 <p>In order to create a release, you need a bit of free time and a GPG setup. You could technically do without them (<code>git tag -am</code> + <code>twine upload</code> without <code>-s</code>), but it’s nicer if we have some confirmation it’s really you.</p>
 <h2>Housekeeping</h2>
@@ -11,6 +11,7 @@
 <li><input type="checkbox"> <code>scripts/update-bower.sh</code></li>
 <li><input type="checkbox"> <code>scripts/generate_symlinked_list.sh</code></li>
 <li><input type="checkbox"> <code>scripts/generate_conf.py &gt; ../nikola-site/listings/conf.py</code> (if necessary, change the path to reflect where you store your clone of the Nikola website)</li>
+<li><input type="checkbox"> Check if there are any new languages that <strong>have translations</strong> (edit the files for translations marked as not found manually) and add them, using <code>scripts/langstatus.py</code></li>
 </ul>
 <h2>Preparation</h2>
 <ul>
