@@ -44,7 +44,7 @@ code { /* using kbd styles instead */
   <body>
     <div class="container">
         <div id="counter"><span id="current">0</span>/<span id="total">?</span></div>
-<h1>Nikola Release Checklist (v10/2016-02-11)</h1>
+<h1>Nikola Release Checklist (v11/2016-02-12)</h1>
 <h2>Requirements</h2>
 <p>In order to create a release, you need a bit of free time and a GPG setup. You could technically do without them (<code>git tag -am</code> + <code>twine upload</code> without <code>-s</code>), but it’s nicer if we have some confirmation it’s really you.</p>
 <h2>Housekeeping</h2>
@@ -80,6 +80,7 @@ code { /* using kbd styles instead */
 <li><input type="checkbox"> <code>git commit -asm &quot;Version $VERSION&quot;</code></li>
 <li><input type="checkbox"> <code>git tag -sm &quot;Version $VERSION&quot; &quot;v$VERSION&quot;</code></li>
 <li><input type="checkbox"> <code>git push --follow-tags origin master</code></li>
+<li><input type="checkbox"> <code>rm -rf build Nikola.egg-info</code></li>
 <li><input type="checkbox"> <code>./setup.py bdist_wheel</code></li>
 <li><input type="checkbox"> <code>twine upload -s dist/Nikola-$VERSION-py2.py3-none-any.whl</code></li>
 </ul>

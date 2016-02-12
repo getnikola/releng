@@ -1,4 +1,4 @@
-# Nikola Release Checklist (v10/2016-02-11)
+# Nikola Release Checklist (v11/2016-02-12)
 
 ## Requirements
 
@@ -40,6 +40,7 @@ Run all the commands in your terminal:
  * <input type="checkbox"> `git commit -asm "Version $VERSION"`
  * <input type="checkbox"> `git tag -sm "Version $VERSION" "v$VERSION"`
  * <input type="checkbox"> `git push --follow-tags origin master`
+ * <input type="checkbox"> `rm -rf build Nikola.egg-info`
  * <input type="checkbox"> `./setup.py bdist_wheel`
  * <input type="checkbox"> `twine upload -s dist/Nikola-$VERSION-py2.py3-none-any.whl`
 
