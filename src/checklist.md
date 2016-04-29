@@ -1,8 +1,8 @@
-# Nikola Release Checklist (v11/2016-02-12)
+# Nikola Release Checklist (v12/2016-04-29)
 
 ## Requirements
 
-In order to create a release, you need a bit of free time and a GPG setup. You could technically do without them (`git tag -am` + `twine upload` without `-s`), but it’s nicer if we have some confirmation it’s really you.
+In order to create a release, you need a bit of free time and a GPG setup.
 
 ## Housekeeping
 
@@ -37,7 +37,7 @@ Run all the commands in your terminal:
  * <input type="checkbox"> `VERSION=X.Y.Z` (without `v`!)
  * <input type="checkbox"> `scripts/set_version.py`
  * <input type="checkbox"> `git add .`
- * <input type="checkbox"> `git commit -asm "Version $VERSION"`
+ * <input type="checkbox"> `git commit -S -asm "Version $VERSION"`
  * <input type="checkbox"> `git tag -sm "Version $VERSION" "v$VERSION"`
  * <input type="checkbox"> `git push --follow-tags origin master`
  * <input type="checkbox"> `rm -rf build Nikola.egg-info`
@@ -64,7 +64,7 @@ Run all the commands in your terminal:
 ## Website update
 
  * <input type="checkbox"> Copy all documentation, `AUTHORS.txt` and `CHANGES.txt` from your Nikola copy to `stories/`
- * <input type="checkbox"> Modify the version numbers in `stories/conf.txt`
+ * <input type="checkbox"> Modify the version numbers in `stories/conf.txt` (it’s used TWICE!)
  * <input type="checkbox"> Optionally regenerate the `cerulean` theme: `nikola bootswatch_theme -s cerulean -n cerulean`
  * <input type="checkbox"> Build and deploy the site
  * <input type="checkbox"> Commit and push your changes to GitHub

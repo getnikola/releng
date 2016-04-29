@@ -44,9 +44,9 @@ code { /* using kbd styles instead */
   <body>
     <div class="container">
         <div id="counter"><span id="current">0</span>/<span id="total">?</span></div>
-<h1>Nikola Release Checklist (v11/2016-02-12)</h1>
+<h1>Nikola Release Checklist (v12/2016-04-29)</h1>
 <h2>Requirements</h2>
-<p>In order to create a release, you need a bit of free time and a GPG setup. You could technically do without them (<code>git tag -am</code> + <code>twine upload</code> without <code>-s</code>), but it’s nicer if we have some confirmation it’s really you.</p>
+<p>In order to create a release, you need a bit of free time and a GPG setup.</p>
 <h2>Housekeeping</h2>
 <ul>
 <li><input type="checkbox"> If you have a local clone of the releng repo: <code>git pull</code> first, refresh the page if necessary</li>
@@ -77,7 +77,7 @@ code { /* using kbd styles instead */
 <li><input type="checkbox"> <code>VERSION=X.Y.Z</code> (without <code>v</code>!)</li>
 <li><input type="checkbox"> <code>scripts/set_version.py</code></li>
 <li><input type="checkbox"> <code>git add .</code></li>
-<li><input type="checkbox"> <code>git commit -asm &quot;Version $VERSION&quot;</code></li>
+<li><input type="checkbox"> <code>git commit -S -asm &quot;Version $VERSION&quot;</code></li>
 <li><input type="checkbox"> <code>git tag -sm &quot;Version $VERSION&quot; &quot;v$VERSION&quot;</code></li>
 <li><input type="checkbox"> <code>git push --follow-tags origin master</code></li>
 <li><input type="checkbox"> <code>rm -rf build Nikola.egg-info</code></li>
@@ -104,7 +104,7 @@ code { /* using kbd styles instead */
 <h2>Website update</h2>
 <ul>
 <li><input type="checkbox"> Copy all documentation, <code>AUTHORS.txt</code> and <code>CHANGES.txt</code> from your Nikola copy to <code>stories/</code></li>
-<li><input type="checkbox"> Modify the version numbers in <code>stories/conf.txt</code></li>
+<li><input type="checkbox"> Modify the version numbers in <code>stories/conf.txt</code> (it’s used TWICE!)</li>
 <li><input type="checkbox"> Optionally regenerate the <code>cerulean</code> theme: <code>nikola bootswatch_theme -s cerulean -n cerulean</code></li>
 <li><input type="checkbox"> Build and deploy the site</li>
 <li><input type="checkbox"> Commit and push your changes to GitHub</li>
