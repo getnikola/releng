@@ -1,4 +1,4 @@
-# Nikola Release Checklist (v13/2016-07-23)
+# Nikola Release Checklist (v14/2017-05-26)
 
 ## Requirements
 
@@ -49,9 +49,9 @@ Run the release script and hope everything works fine:
 ## E-mails
 
  * <input type="checkbox"> Send the e-mail announcement to <nikola-discuss@googlegroups.com> and <python-announce-list@python.org>. You should sign it with GPG if possible.
- * <input type="checkbox"> (OPTIONAL) Report a bug to Debian, notifying them of the update.  (<submit@bugs.debian.org> + Package/Version/Severity “header” lines at top of message)
 
 ## Finishing up
 
  * <input type="checkbox"> Give yourself a pat on the back!
  * <input type="checkbox"> If you have access to the AUR packages, update them (if not, wait for Chris to handle this)
+ * <input type="checkbox"> If you have access to the Snapcraft packages, update them (if not, wait for Roberto to handle this)
