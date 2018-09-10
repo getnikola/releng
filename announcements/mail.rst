@@ -17,10 +17,7 @@ Find out more at the website: https://getnikola.com/
 Downloads
 =========
 
-Install using `pip install Nikola` or download tarballs on GitHub and PyPI:
-
-https://github.com/getnikola/nikola/releases/tag/vX.Y.Z
-https://pypi.python.org/pypi/Nikola/X.Y.Z
+Install using `pip install Nikola`.
 
 Changes
 =======

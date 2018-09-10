@@ -1,4 +1,4 @@
-# Nikola Release Checklist (v14/2017-05-26)
+# Nikola Release Checklist (v15/2018-09-10)
 
 ## Requirements
 
@@ -42,7 +42,7 @@ Run the release script and hope everything works fine:
 
 ## Website update
 
- * <input type="checkbox"> Optionally regenerate the `cerulean` theme: `nikola bootswatch_theme -s cerulean -n cerulean`
+ * <input type="checkbox"> Optionally regenerate the `cerulean` theme: `nikola subtheme -s cerulean -n cerulean`
  * <input type="checkbox"> Build and deploy the site
  * <input type="checkbox"> Commit and push your changes to GitHub
 
@@ -53,5 +53,3 @@ Run the release script and hope everything works fine:
 ## Finishing up
 
  * <input type="checkbox"> Give yourself a pat on the back!
- * <input type="checkbox"> If you have access to the AUR packages, update them (if not, wait for Chris to handle this)
- * <input type="checkbox"> If you have access to the Snapcraft packages, update them (if not, wait for Roberto to handle this)

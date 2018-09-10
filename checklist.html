@@ -5,21 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nikola Release Checklist</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <style>
 ul {
   list-style: none;
   padding-left: 0; }
-code { /* using kbd styles instead */
-  padding: 2px 4px;
-  font-size: 90%;
-  color: #fff;
-  background-color: #333;
-  border-radius: 3px;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
-          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
-}
-
 #counter {
     position: fixed;
     top: 5px;
@@ -36,15 +26,11 @@ code { /* using kbd styles instead */
     background: #dfd;
 }
     </style>
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
     <div class="container">
         <div id="counter"><span id="current">0</span>/<span id="total">?</span></div>
-<h1>Nikola Release Checklist (v14/2017-05-26)</h1>
+<h1>Nikola Release Checklist (v15/2018-09-10)</h1>
 <h2>Requirements</h2>
 <p>In order to create a release, you need a bit of free time, ZSH installed, and a GPG setup.</p>
 <h2>Preparation</h2>
@@ -82,7 +68,7 @@ code { /* using kbd styles instead */
 </ul>
 <h2>Website update</h2>
 <ul>
-<li><input type="checkbox"> Optionally regenerate the <code>cerulean</code> theme: <code>nikola bootswatch_theme -s cerulean -n cerulean</code></li>
+<li><input type="checkbox"> Optionally regenerate the <code>cerulean</code> theme: <code>nikola subtheme -s cerulean -n cerulean</code></li>
 <li><input type="checkbox"> Build and deploy the site</li>
 <li><input type="checkbox"> Commit and push your changes to GitHub</li>
 </ul>
@@ -93,15 +79,12 @@ code { /* using kbd styles instead */
 <h2>Finishing up</h2>
 <ul>
 <li><input type="checkbox"> Give yourself a pat on the back!</li>
-<li><input type="checkbox"> If you have access to the AUR packages, update them (if not, wait for Chris to handle this)</li>
-<li><input type="checkbox"> If you have access to the Snapcraft packages, update them (if not, wait for Roberto to handle this)</li>
 </ul>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script>
     // Completed task counter
-    // by Chris Warrick -- JS code in public domain
+    // © 2015-2018 Chris Warrick. License: MIT
     var max = 0;
     var inp;
     $(document).ready(function() {
