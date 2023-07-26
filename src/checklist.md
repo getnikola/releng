@@ -1,4 +1,4 @@
-# Nikola Release Checklist (v15/2018-09-10)
+# Nikola Release Checklist (v16/2023-07-26)
 
 ## Requirements
 
@@ -29,6 +29,7 @@ Run the release script and hope everything works fine:
 ## GitHub Releases
 
  * <input type="checkbox"> Create a GitHub release for this version by running `scripts/github-release.py` (pass announcement filename and ``v$VERSION`` as arguments)
+ * <input type="checkbox"> Open the release page in your browser and upload the release assets (`.tar.gz`, `.whl`) and their signatures (`.asc`) for this version
 
 ## GitHub Issues
 
