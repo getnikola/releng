@@ -1,30 +1,27 @@
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
     // Completed task counter
-    // © 2015-2018 Chris Warrick. License: MIT
-    var max = 0;
-    var inp;
-    $(document).ready(function() {
-        inp = $('input');
-        max = inp.length;
-        $('#total').text(max);
-    });
-    $('input').click(function() {
-        inp = $('input');
-        var count = 0;
-        for (var i = 0; i < inp.length; i++) {
+    // © 2015-2024 Chris Warrick. License: MIT
+    const max = document.querySelectorAll("input").length;
+    document.getElementById("total").innerText = max;
+    function updateCounter() {
+        const inp = document.querySelectorAll("input");
+        let count = 0;
+        for (let i = 0; i < inp.length; i++) {
             if (inp[i].checked) {
                 count += 1;
             }
         }
-        $('#current').text(count);
-        if (count == max) {
-            $('#counter').addClass('complete');
+        document.getElementById("current").innerText = count;
+        if (count === max) {
+            document.getElementById("counter").classList.add("complete");
         } else {
-            $('#counter').removeClass('complete');
+            document.getElementById("counter").classList.remove("complete");
         }
-    });
+    }
+
+    document.querySelectorAll("input").forEach(i => i.addEventListener("click", updateCounter));
+    updateCounter();
     </script>
   </body>
 </html>
