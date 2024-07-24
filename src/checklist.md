@@ -1,4 +1,4 @@
-# Nikola Release Checklist (v16/2023-07-26)
+# Nikola Release Checklist (v17/2024-07-24)
 
 ## Requirements
 
@@ -49,7 +49,7 @@ Run the release script and hope everything works fine:
 
 ## E-mails
 
- * <input type="checkbox"> Send the e-mail announcement to <nikola-discuss@googlegroups.com> and <python-announce-list@python.org>. You should sign it with GPG if possible.
+ * <input type="checkbox"> Send the e-mail announcement to <python-announce-list@python.org>. You should sign it with GPG if possible.
 
 ## Finishing up
 
